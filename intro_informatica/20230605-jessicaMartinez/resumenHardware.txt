@@ -1,0 +1,4 @@
+Ejemplos de software:
+1. IDE (VSC)
+2. Sistema operativo (windows, linux)
+3. Navegadores web (Chrome, mozilla)

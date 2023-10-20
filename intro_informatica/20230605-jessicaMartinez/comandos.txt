@@ -1,0 +1,29 @@
+ 2052  mkdir 20230605-jessicaMartinez
+ 2053  cd 20230605-jessicaMartinez/
+ 2054  git init
+ 2055  git remote add origin git@github.com:Jessaleem/20230605-jessicaMartinez.git
+ 2056  git remote
+ 2057  touch comandos.txt main.js index.html
+ 2058  ls
+ 2059  git add .
+ 2060  git commit -m 'commit 01 de jessicaMartinez'
+ 2061  git push origin master
+ 2062  git checkout -b feature
+ 2063  mkdir Hardware Software SeguridadInformatica
+ 2064  ls
+ 2065  touch Hardware/resumen.txt SeguridadInformatica/resumen.txt Software/resumen.txt
+ 2066  ls -R
+ 2067  git add .
+ 2068  git commit -m 'commit 02 de jessicaMartinez'
+ 2069  git push origin feature
+ 2070  git switch main
+ 2071  git switch master
+ 2072  ls
+ 2073  mv main.js resumenHardware.txt
+ 2074  ls
+ 2075  mv index.html resumenSoftware.txt
+ 2076  ls
+ 2077  code .
+ 2078  history 50 > comandos.txt
+ 2079  history 27 > comandos.txt
+ 2080  history 29 > comandos.txt

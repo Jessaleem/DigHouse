@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.header-info {
+  background-color: #1cd1b0;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
+.header-main {
+  background-color: #00669f;
+  margin: 0px;
+  height: 101px;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+}
+
+.header-text {
+  font-size: 40px;
+  position: absolute;
+  top: 25%;
+}
+
+.header-nav {
+  background-color: #001d2d;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.ul-header {
+  margin: 0px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#cards-section {
+  text-align: center;
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 2rem 0px;
+  justify-content: space-between;
+  row-gap: 2rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768) and(max-width: 992px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.card-main {
+  width: 300px;
+  position: relative;
+}
+
+.card-text-container {
+  text-align: center;
+  background-color: #f3f3f3;
+  height: 336px;
+  margin-top: -3px;
+}
+
+.card-title {
+  margin: 0;
+  padding-top: 60px;
+}
+
+.card-text {
+  color: #3333;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+.card-button {
+  background-color: #00669f;
+  color: white;
+  padding: 15px 32px;
+  box-sizing: border-box;
+  border-width: 0px;
+}
+.liked {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.profile-pic {
+  position: absolute;
+  top: 25%;
+  right: 30%;
+}
+
+footer {
+  background-color: #00669f;
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+}

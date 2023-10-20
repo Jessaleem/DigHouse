@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css');
+/* mobile First */
+:root{
+    --color-header: #1D728F; 
+    --color-main: #86C6DB;
+    --color-aside: #FFDDC3;
+    --color-footer: #8F5316;
+    --text-header: #DB9C5C;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: var(--color-header);
+    color: var(--text-header);
+}
+header nav ul{
+    display:none;
+}
+header nav::before{
+    content: '\f0c9';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+main{
+    background-color: var(--color-main);
+}
+aside{
+    background-color: var(--color-aside);
+}
+footer{
+    background-color: var(--color-footer);
+    color: var(--color-main);
+}
+footer form{
+    width: 50%;
+}
+/* Version tablet */
+@media screen and (min-width: 680px) {
+
+}
+/* Version desktop */
+@media screen and (min-width: 1024px) {
+
+}

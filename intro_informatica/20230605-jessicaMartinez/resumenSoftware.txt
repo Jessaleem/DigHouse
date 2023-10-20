@@ -1,0 +1,5 @@
+Tipos de memorias principales
+
+1. RAM
+2. ROM
+3. Caché

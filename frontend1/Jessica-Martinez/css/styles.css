@@ -1,0 +1,487 @@
+:root {
+  --violet-color: #8b48bf;
+  --ligth-violet: rgb(139, 72, 191, 0.3);
+  --sky-blue: #3cddf3;
+  --dark-blue: #1e1e26;
+  --navy-blue: #232c50;
+  --text-blue: #242e52;
+  --title-blue: #242e53;
+  --light-blue: rgb(36, 46, 82, 0.6);
+  --ligth-gray: rgb(249, 249, 249);
+  --medium-black: #323851;
+  --medium-gray: #b3b2b7;
+  --text-gay: #8c8c94;
+  --gray-bg: #fafafa;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  box-sizing: border-box;
+  counter-reset: card;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+header button {
+  display: none;
+}
+
+.header-nav {
+  display: none;
+}
+
+#banner {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.banner-text {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  text-align: end;
+}
+
+.banner-img {
+  width: 80vw;
+  padding-bottom: 30px;
+}
+
+.banner-main-text {
+  color: #232c50;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-left: 1rem;
+}
+
+.banner-scnd-text {
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: var(--violet-color);
+  border-radius: 2rem;
+  color: white;
+  padding: 0.8rem 2.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 70%;
+}
+
+#divisor {
+  background-color: var(--sky-blue);
+  color: white;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.divisor-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+#cards {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title-container {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--ligth-violet);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.text-title {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  color: var(--medium-black);
+  align-items: center;
+}
+
+.card-num {
+  background-color: var(--violet-color);
+  padding: 0.7rem 1.7rem;
+  color: white;
+  border-radius: 2rem;
+}
+
+.card-parag {
+  color: var(--medium-gray);
+  line-height: 1.8;
+  padding-right: 0.8rem;
+}
+
+#best-of-month {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+.players-title {
+  font-size: 2.2rem;
+  padding-bottom: 3rem;
+  color: var(--title-blue);
+}
+
+.cards-bestofm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.card-best {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 3rem 0px;
+  background-color: var(--ligth-gray);
+}
+
+.player-img {
+  position: absolute;
+  top: -40px;
+  left: 38vw;
+}
+
+.player-parag {
+  color: var(--medium-gray);
+  padding-top: 2rem;
+}
+
+.more-btn {
+  background-color: var(--violet-color);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem 2.8rem;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  opacity: 70%;
+}
+
+#best-teams {
+  background-color: var(--sky-blue);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 2rem 4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.best-btn {
+  background-color: var(--navy-blue);
+  border-radius: 2rem;
+  color: white;
+  padding: 0.8rem 2.2rem;
+  border: none;
+  align-self: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.best-btn:hover {
+  opacity: 70%;
+}
+
+#footer {
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 3.5rem 2.5rem;
+}
+
+.principal-footer {
+  margin-bottom: 2rem;
+}
+
+.update {
+  padding-bottom: 2rem;
+}
+
+.input {
+  border-radius: 8rem;
+  border: none;
+  padding: 0.8rem 0.5rem;
+  width: 55vw;
+  margin-right: 1rem;
+}
+
+.form-btn {
+  background-color: var(--violet-color);
+  border-radius: 2rem;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  opacity: 70%;
+}
+
+.nav-footer {
+  color: white;
+  display: flex;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.ul-footer {
+  text-decoration: none;
+  text-align: start;
+  padding-left: 1.8rem;
+}
+
+.social-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul li {
+  line-height: 2;
+}
+
+footer nav ul li a {
+  text-decoration-line: none;
+  color: white;
+}
+
+.footer-logo {
+  width: 15rem;
+  height: 4rem;
+  align-self: center;
+}
+
+.footer-p {
+  color: var(--text-gay);
+}
+
+section > div > img {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .hamb-menu {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .header-ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--text-blue);
+    cursor: pointer;
+  }
+
+  header nav ul li a:hover {
+    color: var(--light-blue);
+  }
+
+  .btn {
+    display: inline;
+  }
+
+  #banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .banner-img {
+    width: 35%;
+  }
+
+  .banner-text {
+    width: 40%;
+  }
+
+  .banner-main-text {
+    font-size: 3rem;
+  }
+
+  #divisor {
+    background-color: var(--violet-color);
+    flex-direction: row;
+    padding: 2.5rem 20rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .divisor-title {
+    flex-basis: 50%;
+  }
+
+  .divisor-parag {
+    flex-basis: 50%;
+  }
+
+  #cards {
+    background-color: var(--gray-bg);
+    flex-direction: row;
+    padding: 5rem 15rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 0px;
+  }
+
+  .card-text {
+    width: 420px;
+  }
+
+  .title-container {
+    background-color: var(--gray-bg);
+  }
+
+  .card-parag {
+    padding-left: 6.5rem;
+  }
+
+  #best-of-month {
+    padding: 5rem 3rem 8rem;
+  }
+
+  .players-title {
+    margin-bottom: 1rem;
+  }
+
+  .cards-bestofm {
+    flex-direction: row;
+    background-color: var(--ligth-gray);
+    padding: 0px 1.5rem;
+  }
+
+  .player-img {
+    place-self: center;
+    position: relative;
+    margin-top: -50px;
+    top: -50;
+    left: 0px;
+  }
+
+  .player-name {
+    color: var(--text-blue);
+  }
+
+  #best-teams {
+    background-color: var(--violet-color);
+    display: flex;
+    align-items: center;
+    padding: 5rem 15rem;
+    justify-content: space-between;
+  }
+
+  .best-text {
+    flex-basis: 40%;
+    text-align: left;
+  }
+
+  .best-btn {
+    margin-top: 0;
+    background-color: #ffff;
+    color: var(--violet-color);
+    font-weight: 600;
+  }
+
+  #footer {
+    padding: 3.5rem 10rem;
+  }
+
+  .principal-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    justify-content: space-between;
+    margin: 0px;
+  }
+
+  .social-logo {
+    order: -1;
+    flex-direction: column-reverse;
+    margin-top: -0.5rem;
+  }
+
+  .footer-social {
+    gap: 0.8rem;
+    padding-left: 0.5rem;
+  }
+
+  .footer-logo {
+    width: 7rem;
+    align-self: flex-start;
+  }
+
+  .nav-footer {
+    padding: 0px;
+    gap: 8rem;
+  }
+
+  .update {
+    order: 3;
+    display: flex;
+  }
+
+  .input {
+    width: 12vw;
+  }
+
+  .footer-p {
+    text-align: right;
+    font-size: 0.8rem;
+  }
+}
